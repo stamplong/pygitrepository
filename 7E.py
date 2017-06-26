@@ -1,0 +1,6 @@
+regexp2 = compile(r'(long|zitan)')
+abc = regexp2.search("long zitan")
+print abc.group()
+regexp1 = compile(r'(\d\d\d)\((\d\d\d)\)')
+abc = regexp1.search("123(467)")
+print abc.group(1)
